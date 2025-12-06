@@ -1,79 +1,69 @@
 export type EventItem = {
-  id: number;
-  title: string;
-  description: string;
-  date: string;
-  time: string;
-  location: string;
   image: string;
+  title: string;
   slug: string;
+  location: string;
+  date: string; // e.g., "2025-11-07"
+  time: string; // e.g., "09:00 AM"
 };
 
 export const events: EventItem[] = [
   {
-    id: 1,
-    title: "Tech Innovators Summit",
-    description:
-      "Join the brightest minds in tech for a day of inspiring talks and networking. Explore the latest trends in AI, blockchain, and sustainable technology.",
-    date: "2024-11-15",
-    time: "09:00 AM - 05:00 PM",
-    location: "Convention Center, San Francisco",
     image: "/images/event1.png",
-    slug: "tech-innovators-summit",
+    title: "React Summit US 2025",
+    slug: "react-summit-us-2025",
+    location: "San Francisco, CA, USA",
+    date: "2025-11-07",
+    time: "09:00 AM",
   },
   {
-    id: 2,
-    title: "Global Hackathon 2024",
-    description:
-      "A 48-hour coding marathon to solve real-world problems. Collaborate with developers from around the globe and win amazing prizes.",
-    date: "2024-12-10",
-    time: "10:00 AM (Starts)",
-    location: "Virtual / Online",
     image: "/images/event2.png",
-    slug: "global-hackathon-2024",
+    title: "KubeCon + CloudNativeCon Europe 2026",
+    slug: "kubecon-cloudnativecon-eu-2026",
+    location: "Vienna, Austria",
+    date: "2026-03-18",
+    time: "10:00 AM",
   },
   {
-    id: 3,
-    title: "Future of Web Dev Meetup",
-    description:
-      "Discuss the future of web development with industry leaders. Topics include WebAssembly, Edge Computing, and the next generation of frameworks.",
-    date: "2025-01-20",
-    time: "06:00 PM - 09:00 PM",
-    location: "Tech Hub, New York",
     image: "/images/event3.png",
-    slug: "future-of-web-dev-meetup",
+    title: "AWS re:Invent 2025",
+    slug: "aws-reinvent-2025",
+    location: "Las Vegas, NV, USA",
+    date: "2025-12-01",
+    time: "08:30 AM",
   },
   {
-    id: 4,
-    title: "AI & Machine Learning Expo",
-    description:
-      "Discover the latest advancements in Artificial Intelligence and Machine Learning. See live demos and meet the creators behind the algorithms.",
-    date: "2025-02-14",
-    time: "09:00 AM - 06:00 PM",
-    location: "Expo Hall, London",
     image: "/images/event4.png",
-    slug: "ai-ml-expo",
+    title: "Next.js Conf 2025",
+    slug: "nextjs-conf-2025",
+    location: "Los Angeles, CA, USA (Hybrid)",
+    date: "2025-11-12",
+    time: "09:30 AM",
   },
   {
-    id: 5,
-    title: "Cybersecurity Defense Workshop",
-    description:
-      "Learn practical skills to defend against modern cyber threats. Hands-on workshop led by certified security experts.",
-    date: "2025-03-05",
-    time: "01:00 PM - 05:00 PM",
-    location: "Security Lab, Berlin",
     image: "/images/event5.png",
-    slug: "cybersecurity-defense-workshop",
+    title: "Google Cloud Next 2026",
+    slug: "google-cloud-next-2026",
+    location: "San Jose, CA, USA",
+    date: "2026-04-07",
+    time: "09:00 AM",
   },
   {
-    id: 6,
-    title: "Cloud Native Conference",
-    description:
-      "Everything about Kubernetes, microservices, and cloud-native architecture. Best practices for scaling and deploying modern applications.",
-    date: "2025-04-12",
-    time: "08:30 AM - 05:30 PM",
-    location: "Cloud Campus, Seattle",
     image: "/images/event6.png",
-    slug: "cloud-native-conference",
+    title: "ETHGlobal Hackathon: Paris 2026",
+    slug: "ethglobal-paris-2026",
+    location: "Paris, France",
+    date: "2026-07-10",
+    time: "10:00 AM",
+  },
+  {
+    image: "/images/event-full.png",
+    title: "Open Source Summit North America 2026",
+    slug: "oss-na-2026",
+    location: "Vancouver, Canada",
+    date: "2026-06-22",
+    time: "09:00 AM",
   },
 ];
+
+export default events;
